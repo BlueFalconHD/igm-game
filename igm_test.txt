@@ -1,13 +1,38 @@
 Let's make a game!
   name:Idle Computing
-  author:BlueFslconHD
   desc:A simple clicker game.
   created:24/09/21
   updated:24/09/21
   version:1.0
+  stylesheet:https://pastebin.com/Q0acyFTu
 Settings
   tiling background:https://previews.123rf.com/images/dimapolie/dimapolie1804/dimapolie180400134/99402221-vector-computer-pattern-computer-seamless-background.jpg
   building cost increase:115%
   building cost refund:75%
   spritesheet:buyicons, 48 by 48, url.jpg
-  
+  stylesheet:https://pastebin.com/Q0acyFTu
+Layout
+  *resources
+    contains:Resources
+    header:Bitcoin
+  *buildings
+    contains:Buildings
+    header:Computer parts (buy/sell)
+    tooltip origin:left
+  *unlockables
+    contains:Upgrades
+    header:Computer Upgrades
+  *achievements
+    contains:Achievements
+    header:Achievements
+  *ram
+    name: ram
+    desc: Purchase more RAM (20 Bitcoin)
+    cost: 20 
+  *btc
+    name:Bitocoin
+    desc:Main currency for buying PC parts.
+  *Mine Bitcoin
+    name:Mine Bitcoin
+    desc:Click this to mine (thingkey:earned ram) Bitcoin.
+    on click:yield (thingkey:earned ram) btc
